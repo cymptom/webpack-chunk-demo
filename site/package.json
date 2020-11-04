@@ -1,0 +1,23 @@
+{
+  "name": "webpack-chunk-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run build:libs && npm run build:site && npm run server",
+    "build:libs": "npx webpack --color && npm run api-extractor --prefix ../lib/guid-generator",
+    "build:site": "npx tsc",
+    "server": "node server",
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^8.0.7",
+    "typescript": "^4.0.5",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

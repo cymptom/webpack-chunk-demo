@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "es5",
+    "module": "umd",
+    "moduleResolution": "node",
+    "strict": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "typeRoots": [
+      "../lib"
+    ],
+    "paths": {
+      "/dist/*": [
+        "../lib/*"
+      ]
+    }
+  }
+}
