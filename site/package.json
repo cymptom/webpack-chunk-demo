@@ -7,7 +7,7 @@
     "start": "npm run build:libs && npm run build:site && npm run server",
     "build:libs": "npx webpack --color && npm run api-extractor --prefix ../lib/guid-generator",
     "build:site": "npx tsc",
-    "server": "node server",
+    "server": "node server"
   },
   "author": "",
   "license": "ISC",
